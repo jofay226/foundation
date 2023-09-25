@@ -4,62 +4,104 @@ import Lesson from "../lesson/Lesson";
 const Section = () => {
   const data = [
     {
-      header: "1. Lesson: Intro",
+      header: "1. Урок: Вступление",
       body: ["Microsft Windows"],
     },
     {
-      header: "2. Lesson: Basic Operations",
+      header: "2. Урок: Использование мыши",
       body: [
-        "connecting WI-FI",
-        "Surfing on internet",
-        "Using Chrome, Safari, File Explorer",
+        "Перемещайтесь с помощью мыши",
+        "двойной щелчок",
+        "щелкните правой кнопкой мыши",
+        "конфигурация",
       ],
     },
     {
-      header: "3. Lesson: Manipulation",
-      body: ["Folder Manipulation", "File Manipulation"],
-    },
-    {
-      header: "4. Lesson: Online Applications",
-      body: ["Mail Application", "You Tube", "Registration"],
-    },
-    {
-      header: "5. Lesson: Using your mouse",
-      body: ["Navigate mouse", "double click"],
-    },
-    {
-      header: "6. Lesson: Desktop Items",
-      body: ["organise desktop icons", "Delete icon", "Add icon"],
-    },
-    {
-      header: "7. Lesson: Start Button",
-      body: ["Navigating", "Selecting"],
-    },
-    {
-      header: "8. Lesson: Windows",
+      header: "3. Урок: Элементы рабочего стола",
       body: [
-        "Resize",
-        "Maximizing",
-        "Minimizing",
-        "Working with multiple windows",
+        "перемещать значков на рабочем столе",
+        "Удалить значок",
+        "Добавить значок",
+        "переименовать",
       ],
     },
     {
-      header: "9. Lesson: Copying and Moving",
+      header: "4. Урок: манипулирование файлами, папками",
+      body: ["создать", "удалить", "переместить файл", "переименовать"],
+    },
+    {
+      header: "5. Урок: Копирование и перемещение",
       body: [
-        "Different methods copying and moving",
-        "Copying and moving multiple files",
+        "Различные методы копирования и перемещения",
+        "Копирование и перемещение нескольких файлов",
       ],
     },
     {
-      header: "10. Lesson: Printing, Creating and Saving",
-      body: ["Create", "Save", "Save As", "Print function"],
+      header: "6. Урок: Окна",
+      body: [
+        "Изменить размер",
+        "увеличение",
+        "уменьшение",
+        "Работа с несколькими окнами",
+      ],
+    },
+    {
+      header: "7. Урок: Кнопка 'Пуск'",
+      body: ["понимание значков внутри", "Выбор"],
+    },
+    {
+      header: "8. Урок: Печать, создание и сохранение",
+      body: ["Создавать", "Сохранить", "Сохранить как", "Функция печати"],
+    },
+    {
+      header: "9. Урок: Основные операции с Интернетом",
+      body: [
+        "подключение WI-FI",
+        "Серфинг в Интернете",
+        "использовать Chrome, Safari, File Explorer",
+      ],
+    },
+    {
+      header: "10. Урок: Онлайн-приложения",
+      body: [
+        "Почтовое приложение",
+        "You Tube",
+        "Регистрация",
+        "удалить учетную запись",
+      ],
+    },
+    {
+      header: "11. Урок: Онлайн-приложения",
+      body: [
+        "Почтовое приложение",
+        "You Tube",
+        "Регистрация",
+        "удалить учетную запись",
+      ],
+    },
+    {
+      header: "12. Урок: Microsoft Office",
+      body: ["Excel", "Power Point", "Word"],
+    },
+    {
+      header: "13. Урок: Что такое Терминал",
+      body: [
+        "создайте файл с помощью терминала",
+        "удалить файл через терминал",
+        "измените путь через терминал",
+        "команда(cd, ls, pwd, -a, mkdir <directory>, clear, rm <file>)",
+        "Пути(., /, ..,)",
+      ],
+    },
+    {
+      header: "14. Урок: инструмент Visual Studio Code",
+      body: ["скачать vscode", "понимание vscode", "настройки"],
     },
   ];
 
   return (
     <div className="section">
-      <h1>Foundations Course</h1>
+      <h1>Базовый курс</h1>
       {data.map((course, index) => {
         return <Lesson key={index} course={course} />;
       })}

@@ -12,15 +12,15 @@ const Footer = () => {
       </div>
       <div className="footer-container2">
         <div>
-          <h1>Study</h1>
+          <h1>Изучать</h1>
           <BiBookReader />
         </div>
         <div>
-          <h1>Learn</h1>
+          <h1>Учить</h1>
           <PiReadCvLogoBold />
         </div>
         <div>
-          <h1>Create</h1>
+          <h1>Создавать</h1>
           <VscGitPullRequestCreate />
         </div>
       </div>

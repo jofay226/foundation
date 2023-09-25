@@ -24,16 +24,16 @@ const Header = () => {
         <div ref={dynamicMenuRef} className="dynamic-menu">
           <ul className="dynamic-menu-list">
             <li>
-              <a href="/">Home</a>
+              <a href="/">Домой</a>
             </li>
             <li>
-              <a href="/aboutus">About Us</a>
+              <a href="/aboutus">о нас</a>
             </li>
             <li>
-              <a href="/aboutcourse">About Course</a>
+              <a href="/aboutcourse">О курсе</a>
             </li>
             <li>
-              <a href="/contactus">Contact Us</a>
+              <a href="/contactus">связаться с нами</a>
             </li>
           </ul>
         </div>
