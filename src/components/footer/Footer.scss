@@ -1,0 +1,41 @@
+.footer {
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  @media (max-width: 500px) {
+    flex-direction: column;
+  }
+
+  &-container1 {
+    & > h1 {
+      color: white;
+      font-size: 3rem;
+    }
+  }
+  &-container2 {
+    @media (max-width: 500px) {
+      display: flex;
+      gap: 1.5rem;
+    }
+    & > div {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+
+      & > h1 {
+        color: white;
+        margin: 0;
+      }
+      & > svg {
+        color: white;
+        font-size: 2rem;
+      }
+    }
+    & > h1 {
+      color: white;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.section {
+  width: Min(150rem, 90%);
+  margin-inline: auto;
+  min-height: 100vh;
+  & > h1 {
+    text-align: center;
+    font-size: 3rem;
+  }
+  &-container {
+    padding: 0.8rem;
+    &-header {
+      &:hover {
+        cursor: pointer;
+      }
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.5rem;
+      & > h1 {
+        margin: 0;
+        font-size: 2rem;
+      }
+      & > svg {
+        font-size: 2rem;
+        transition: all 0.3s;
+      }
+
+      .active {
+        transform: rotate(180deg);
+      }
+    }
+    &-inner {
+      overflow: hidden;
+      border-bottom: 2px solid black;
+      & > ul {
+        & > li {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
